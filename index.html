@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoy</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logoimg"></div>
+            </div>
+
+            <div class="nav-task">
+                <ul class="nav-item-container">
+                    <li class="nav-item"><a href="index.html" class="task">Tasks</a></li>
+                    <li class="nav-item"><a href="#" class="DT">Date/Time</a></li>
+                    <li class="nav-item"><a href="#" class="help">Help</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="heading">
+                <h1>TODO's List</h1>
+            </div>
+
+            <div class="info">
+              
+                    <div class="tit-head dive">
+                        <p class="h">Title</p>
+                    </div>    
+                    <div class="tit-body dive">
+                        <input type="text" class="bdy bdy1">
+                    </div>
+
+              
+             
+                    <div class="desc-head dive">
+                        <p class="h">Description</p>
+                    </div>
+                    <div class="desc-body dive">
+                        <textarea name="" id="db" cols="30" rows="10" class="bdy2 bdy"></textarea>
+                    </div>
+
+                    <div class="add-btn">
+                        <button type="submit" id="add">Add to List</button>
+                        <button id="Clr" onclick="Clr()">Clear List</button>
+                    </div>
+
+               
+            </div>
+
+            <div class="content-table">
+                
+                <div class="show-item"><div class="show"><h2>Your Tasks</h2></div></div>
+                
+                <div class="table-div">
+                    <table class="table">
+                        <thead id="table-head">
+                          <tr>
+                            <th scope="row" class="call">S.No.</th>
+                            <th scope="col" class="call">Tasks</th>
+                            <th scope="col" class="call">Description</th>
+                            <th scope="col" class="call call4">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tbl-body">
+          
+                        </tbody>
+                      </table>
+                </div>
+                
+            </div>
+        </div>
+
+    </header>
+    <script src="index.js"></script>
+    </script>
+</body>
+</html>
